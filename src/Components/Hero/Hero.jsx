@@ -33,9 +33,9 @@ export const Hero = () => {
         {/* Right Side Image/Illustration */}
         <div className="flex justify-end">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/4359/4359963.png"
+            src="https://i.ibb.co.com/wNKtw3JK/f57b10ed-08f4-4064-a94f-5ba2d10792d8-removebg-preview.png"
             alt="Expense Tracker Illustration"
-            className="w-80 md:w-[400px] drop-shadow-lg"
+            className="w-80 rounded-2xl md:w-[400px] drop-shadow-lg"
           />
         </div>
       </div>
