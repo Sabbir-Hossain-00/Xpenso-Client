@@ -59,9 +59,9 @@ export const MyExpense = () => {
 
   return (
     <div className="container mx-auto px-3 md:px-6 lg:px-20 xl:px-40 pt-24">
-      <div className="flex flex-col md:flex-row gap-3 justify-between items-center py-10">
-        <h1 className="text-2xl font-bold mb-6 text-gray-700">My Expenses</h1>
-        <div className=" flex flex-col items-end gap-3">
+      <div className="flex flex-col md:flex-row  justify-between md:items-start py-10">
+        <h1 className="text-2xl font-bold mb-6 text-gray-700 hidden md:block">My Expenses</h1>
+        <div className=" flex flex-col md:items-end gap-3">
           <h1 className="text-2xl font-bold text-gray-700 mb-2 ">
             Total Expenses: {stats?.totalExpenses}$
           </h1>
