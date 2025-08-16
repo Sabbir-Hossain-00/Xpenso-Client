@@ -1,12 +1,33 @@
-# React + Vite
+# 💰 Xpenso – Smart Expense Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern expense tracking application where users can **add, view, filter, edit, and delete expenses**. It provides a clean UI, smart filtering, and data visualization for better financial management.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [Xpenso](https://xpenso-00.web.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Key Features
+- 📊 Add, view, and manage expenses with category, date, and amount.  
+- 🔍 Filter expenses by **date** or **category**.  
+- ✏️ Edit and delete expenses anytime.  
+- 📅 Smart **date picker** integration for selecting expense dates.  
+- 🎨 Beautiful UI with smooth and modern design.  
+- 🔒 User authentication (Sign Up / Login).  
+- ✅ SweetAlert confirmation for actions like **Sign Out**.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Tech Stack
+- **Frontend:** React.js, Tailwind CSS, DaisyUI, React Router, Axios  
+- **Backend:** Node.js, Express.js, MongoDB  
+- **Authentication:** Firebase Auth  
+- **Deployment:** Firebase (Frontend), Render/Heroku (Backend)
+
+---
+
+## 🛠️ Step-by-Step Setup Instructions
+
+### 🔹 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/xpenso.git
+cd xpenso
