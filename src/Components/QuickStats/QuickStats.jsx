@@ -12,6 +12,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { useAxiosSecure } from "../../Hooks/useAxiosSecure";
+import { Loader } from "../../Pages/Loader/Loader";
 
 const COLORS = ["#FBBF24", "#60A5FA", "#34D399", "#F87171", "#A78BFA"];
 
@@ -25,7 +26,7 @@ export default function DashboardPreview() {
     });
   }, []);
 
-  if (!stats) return <p className="text-center">Loading...</p>;
+  if (!stats) return <Loader/>;
 
   return (
     <section className="py-16 bg-gradient-to-r from-blue-100 via-gray-50 to-blue-50">
