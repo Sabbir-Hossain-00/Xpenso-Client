@@ -59,7 +59,7 @@ export const MyExpense = () => {
 
   return (
     <div className="container mx-auto px-3 md:px-6 lg:px-20 xl:px-40 pt-24">
-      <div className="flex justify-between items-center py-10">
+      <div className="flex flex-col md:flex-row gap-3 justify-between items-center py-10">
         <h1 className="text-2xl font-bold mb-6 text-gray-700">My Expenses</h1>
         <div className=" flex flex-col items-end gap-3">
           <h1 className="text-2xl font-bold text-gray-700 mb-2 ">
