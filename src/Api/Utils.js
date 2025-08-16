@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// image upload to imgbb api 
 export const imageUpload = async (imageFile) => {
   const imageFormData = new FormData();
   imageFormData.append("image", imageFile);

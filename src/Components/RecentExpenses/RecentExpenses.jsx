@@ -20,7 +20,7 @@ export const RecentExpenses = () => {
   return (
     <div className="container mx-auto px-3 md:px-6 lg:px-20 xl:px-40 py-20">
       <h2 className="text-2xl font-bold text-gray-700 mb-6">Recent Expenses</h2>
-
+      {/* recent expense table */}
       <div className="bg-white shadow-lg rounded-2xl overflow-hidden">
         <div className=" overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200">

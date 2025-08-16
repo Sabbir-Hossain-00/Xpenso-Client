@@ -29,6 +29,7 @@ export default function DashboardPreview() {
 
   return (
     <section className="py-16 bg-gradient-to-r from-blue-100 via-gray-50 to-blue-50">
+      {/* stats cards */}
         <div className="container mx-auto px-3 md:px-6 lg:px-20 xl:px-40">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         <div className="bg-white shadow-lg rounded-2xl p-6 text-center hover:scale-105 transition">

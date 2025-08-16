@@ -6,7 +6,7 @@ import { GoogleLogin } from "../../../Components/GoogleLogin/GoogleLogin";
 import { useAxiosSecure } from "../../../Hooks/useAxiosSecure";
 import { useState } from "react";
 import { toast } from "react-toastify";
-import { AuthContext } from "../../../context/AuthContext";
+import { AuthContext } from "../../../Context/AuthContext";
 
 export const Register = () => {
   const { signUpUser, updateUser } = use(AuthContext);

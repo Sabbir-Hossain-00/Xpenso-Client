@@ -2,7 +2,7 @@ import { use } from "react";
 import { useLocation, useNavigate } from "react-router";
 import { useAxiosSecure } from "../../Hooks/useAxiosSecure";
 import { toast } from "react-toastify";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../Context/AuthContext";
 
 export const GoogleLogin = () => {
   const { googleSignIn } = use(AuthContext);
@@ -10,6 +10,7 @@ export const GoogleLogin = () => {
   const axiosSecure = useAxiosSecure();
   const navigate = useNavigate();
 
+  // google login function
   const handleGoogleLogin = async () => {
     try {
       const result = await googleSignIn();
@@ -20,6 +21,7 @@ export const GoogleLogin = () => {
         badge: "bronze",
       };
 
+      // user data post to backend
       const { data } = await axiosSecure.post("/user", userData);
 
       if (data?.insertedId) {
@@ -28,6 +30,7 @@ export const GoogleLogin = () => {
         toast.info("Welcome back!");
       }
 
+      // navigate after successfully login
       navigate(location.state?.from || "/");
     } catch (error) {
       console.error(error);
@@ -37,6 +40,7 @@ export const GoogleLogin = () => {
 
   return (
     <>
+    {/* google button */}
       <button
         onClick={handleGoogleLogin}
         className="btn w-full bg-white text-black border-none shadow-none hover:shadow-2xl flex items-center justify-center gap-2"

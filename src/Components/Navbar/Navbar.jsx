@@ -1,13 +1,15 @@
 import { use, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router";
-import { AuthContext } from "../../context/AuthContext";
 import { Loader } from "../../Pages/Loader/Loader";
 import { XpensoLogo } from "../Logo/XpensoLogo";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../Context/AuthContext";
 
 export const Navbar = () => {
   const { user, signOutUser } = use(AuthContext);
   const [open, setOpen] = useState(false);
+
+  // li and links
   const links = (
     <>
       <li>
@@ -42,6 +44,8 @@ export const Navbar = () => {
       </li>
     </>
   );
+
+  // sign out function
   const handleSignOut = () => {
     Swal.fire({
       title: "Are you sure?",

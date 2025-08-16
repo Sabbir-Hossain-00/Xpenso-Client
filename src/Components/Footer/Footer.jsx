@@ -1,22 +1,25 @@
 import { use } from "react";
-import { AuthContext } from "../../context/AuthContext";
 import { FacebookIcon, Github, Instagram, Twitter } from "lucide-react";
 import { toast } from "react-toastify";
 import { XpensoLogo } from "../Logo/XpensoLogo";
+import { AuthContext } from "../../Context/AuthContext";
 
 export const Footer = () => {
   const { isDark, user } = use(AuthContext);
   return (
     <section className={` ${isDark ? "bg-black" : "bg-white"}`}>
+      {/* footer */}
       <footer className="pt-20 py-12  shadow-lg">
         <div className="container mx-auto px-3 md:px-6 lg:px-20 xl:px-40 flex flex-col md:flex-row gap-12   justify-between items-start">
           <div className="space-y-4">
+            {/* logo */}
             <div className="flex items-center">
              <XpensoLogo/>
             </div>
             <p className={`max-w-xs ${isDark ? "text-white" : "text-black"} `}>
               A smart expense tracker that lets users add, edit, and delete expenses, view detailed analytics, and monitor spending trends effortlessly.
             </p>
+            {/* social links */}
             <div className="flex space-x-4 mt-4">
               <a target="blank" href="https://www.facebook.com/jrsabbir00">
                 <FacebookIcon
@@ -51,7 +54,7 @@ export const Footer = () => {
               </a>
             </div>
           </div>
-
+          {/* subscribe news-letter */}
           <div>
             <h4
               className={`text-xl font-semibold mb-4 ${
@@ -78,7 +81,7 @@ export const Footer = () => {
               </button>
             </form>
           </div>
-
+          {/* contact info */}
           <div className={`${isDark ? "text-white" : "text-black"}`}>
             <h4 className="text-xl font-semibold mb-4">Contact Us</h4>
             <p className=" mb-2">Email: support@xpenso.com</p>
