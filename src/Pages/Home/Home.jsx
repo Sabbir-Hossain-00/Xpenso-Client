@@ -9,7 +9,7 @@ import { AuthContext } from "../../Context/AuthContext"
 export const Home = ()=>{
     const {user} = use(AuthContext)
      return(
-        <main className=" bg-gray-50 pt-20">
+        <main className=" bg-gray-50 pt-21">
          <section>
             <Hero/>
          </section>
