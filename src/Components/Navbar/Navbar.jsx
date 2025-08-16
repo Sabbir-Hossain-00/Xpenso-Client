@@ -72,8 +72,8 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="bg-white shadow fixed w-full top-0 z-100">
-      <div className="navbar  container mx-auto px-3 md:px-6 lg:px-20 xl:px-40 ">
+    <div className="bg-white/30 backdrop-blur-md shadow fixed w-full top-0 z-100">
+      <div className="navbar py-4 container mx-auto px-3 md:px-6 lg:px-20 xl:px-40 ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

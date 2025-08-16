@@ -4,12 +4,12 @@ import { Hero } from "../../Components/Hero/Hero"
 import { HowItWorks } from "../../Components/HowItWorks/HowItWorks"
 import QuickStats from "../../Components/QuickStats/QuickStats"
 import { RecentExpenses } from "../../Components/RecentExpenses/RecentExpenses"
-import { AuthContext } from "../../context/AuthContext"
+import { AuthContext } from "../../Context/AuthContext"
 
 export const Home = ()=>{
     const {user} = use(AuthContext)
      return(
-        <main className=" bg-gray-50 pt-16">
+        <main className=" bg-gray-50 pt-20">
          <section>
             <Hero/>
          </section>
